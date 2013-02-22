@@ -1,0 +1,130 @@
+package com.mad_duo.centerforpuppetryarts;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MuseumActivity extends Activity 
+{
+	final String MUSEUM_URL = "http://puppet.org/museum/index.shtml";
+	
+	private Button membershipButton;
+	private TextView membershipBenefits;
+	private Spinner spinner;
+	private Button membershipBuy;
+	
+	private ImageButtonView facebookButton;
+	private ImageButtonView twitterButton;
+	private ImageButtonView youtubeButton;
+	private ImageButtonView logoButton;
+	
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.museum_layout);
+		
+		facebookButton = new ImageButtonView((ImageView) findViewById(R.id.facebook_icon));
+        twitterButton = new ImageButtonView((ImageView) findViewById(R.id.twitter_icon));
+        youtubeButton = new ImageButtonView((ImageView) findViewById(R.id.youtube_icon));
+        logoButton = new ImageButtonView((ImageView) findViewById(R.id.logo_button));
+        Data.socialMediaLinks(MuseumActivity.this, logoButton, facebookButton, 
+        		twitterButton, youtubeButton);
+        
+        membershipButton = (Button) findViewById(R.id.membership);
+        membershipButton.setOnClickListener(new OnClickListener()
+        {
+        	public void onClick(View v)
+        	{
+        		Dialog d = new Dialog(MuseumActivity.this);
+        		d.setContentView(R.layout.membership_dialog);
+        		d.setTitle("Purchase Membership");
+        		membershipBenefits = (TextView) d.findViewById(R.id.membership_benefits);
+        		membershipBuy = (Button) d.findViewById(R.id.membership_buy);
+        		spinner = (Spinner) d.findViewById(R.id.membership_level);
+        		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MuseumActivity.this,
+        		        R.array.membership_levels, android.R.layout.simple_spinner_item);
+        		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        		spinner.setAdapter(adapter);
+        		spinner.setOnItemSelectedListener(new OnItemSelectedListener()
+        		{
+					public void onItemSelected(AdapterView<?> parent, View v, int pos, long id) 
+					{
+						if(id > 1 && id < 7)
+						{
+							id-=2;
+							Message m = new Message();
+							m.obj = Data.MEMBERSHIP_LEVEL_BENEFITS[Math.min((int) id, 4)];
+							h.sendMessage(m);
+						}
+						else
+						{
+							Message m = new Message();
+							m.obj = "";
+							h.sendMessage(m);
+						}
+					}
+					
+
+					public void onNothingSelected(AdapterView<?> parent) 
+					{
+					}
+        		});
+        		membershipBuy.setOnClickListener(new OnClickListener()
+        		{
+        			public void onClick(View v)
+        			{
+        				int id = spinner.getSelectedItemPosition();
+        				if(id > 1 && id < 7)
+        				{
+        					int amount=-1;
+        					try
+        					{
+        						amount = Integer.parseInt(((EditText) findViewById(R.id.membership_amount)).getText().toString());
+        					}
+        					catch (Exception e)
+        					{
+        						
+        					}
+        					if(amount == -1)
+        					{
+        						String s = (String) spinner.getItemAtPosition(id);
+        						s = s.substring(s.indexOf("$")+1, s.length()-1);
+        						amount = Integer.parseInt(s);
+        					}
+        					Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://ticketsales.puppet.org/dev/contribute.aspx?don=" + id + "&fieldAmt=" + amount));
+        	            	MuseumActivity.this.startActivity(browserIntent);
+        				}
+        				else
+        				{
+        					Toast.makeText(getApplicationContext(), "Please select a membership level", Toast.LENGTH_SHORT).show();
+        				}
+        			}
+        		});
+        		d.show();
+        	}
+        });
+	}
+	
+	private Handler h = new Handler()
+	{
+		public void handleMessage(Message m)
+		{
+			membershipBenefits.setText(m.obj+"");
+		}
+	};
+}

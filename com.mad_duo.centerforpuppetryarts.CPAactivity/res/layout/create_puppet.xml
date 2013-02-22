@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brer Rabbit and Friends"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Apr 9 - May 26, 2013\nWorkshop Times: Tuesday-Friday 10am and 11:30am Instructor Led (taught); 12:30 Self-Guided (open); Saturday 1pm-4pm; Sunday 2pm-5pm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brother Coyote and Sister Fox"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Jan 8 - 27, 2013\nWorkshop Times: Tuesday-Friday 10am and 11:30am Instructor Led (taught); 12:30 Self-Guided (open); Saturday 12pm-5pm; Sunday 2pm-5pm" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Adventures of Mighty Bug"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Jan 29 - Mar 17, 2013\nWorkshop Times: Tuesday-Friday 10am and 11:30am Instructor Led (taught); 12:30 Self-Guided (open); Saturday 1pm-4pm; Sunday 2pm-5pm" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galapagos George, the Little Tortoise that Could"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Mar 19 - Apr 7, 2013\nWorkshop Times: Tuesday-Friday 10am and 11:30am Instructor Led (taught); 12:30 Self-Guided (open); Saturday 12pm-5pm; Sunday 2pm-5pm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please call 404.873.3391 to reserve." />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4.32 per person for groups of 10 or more. (Included in the Group Inclusive Tickets." />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indviduals and Members:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Included with all-inclusive ticket." />
+    
+    
+</LinearLayout>

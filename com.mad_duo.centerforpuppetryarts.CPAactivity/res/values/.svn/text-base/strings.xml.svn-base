@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">CenterForPuppetryArts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_cpaactivity">CPAactivity</string>
+    <string-array name="membership_levels">
+        <item>Please select one:</item>
+        <item>Individual - $60</item>
+        <item>Family - $90</item>
+        <item>Sponsor - $150</item>
+        <item>Sustainer - $250</item>
+        <item>Benefactor - $500</item>
+        <item>Impresario - $1,000</item>
+        <item>Director - $2,500</item>
+        <item>Producer - $5,000</item>
+        <item>Trustee\'s Circle - $10,000</item>
+        
+    </string-array>
+
+</resources>

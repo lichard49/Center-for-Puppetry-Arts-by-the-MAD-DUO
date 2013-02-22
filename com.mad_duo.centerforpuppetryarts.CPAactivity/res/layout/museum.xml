@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical" >
+        
+        <TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+android:text="Museum Hours"
+android:textAppearance="?android:attr/textAppearanceMedium" />	
+<TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:lines="6"
+android:text="Tuesday-Friday: 9am-3pm\nSaturday: 9am-5pm\nSunday: 11am-5pm\n\nOpen until showtime for evening performances.\n"/>
+
+<TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+android:text="Museum Admissions"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:lines="3"
+android:text="Adults, Children - $8.25\nUNIMA Members - $8.25\n\n"/>
+
+<TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+android:text="Guided Tours:"
+android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView 
+    android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:lines="9"
+android:text="Guided Tour Combo Ticket (all-inclusive ticket plus a guided tour) - $11.25 for Members and $18.50 for non-Members\nGuided Tour Ticket Only - $2 for Members and $10.25 for non-Members\n$6.25 per person for groups of 10 or more.\n\nFree to Members or with full-priced show admission.\n\nVisit our Museum Exhibits free of charge every Thursday from 1-3pm.\n\nFulton County FREE Museum Saturdays on the first Saturday of every month."/>
+        
+    </LinearLayout>
+</ScrollView>
+    

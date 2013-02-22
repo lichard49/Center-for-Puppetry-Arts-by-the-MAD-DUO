@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/background_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/temp_bg" />
+
+
+    <CalendarView 
+        android:id="@+id/show_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" 
+        android:layout_marginBottom="300dp" 
+        android:showWeekNumber="false"/>
+
+    <TextView
+        android:id="@+id/show_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#800000"/>
+         
+    <ImageView
+        android:id="@+id/logo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/social_media_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/temp_logo" />
+
+    <LinearLayout
+        android:id="@+id/social_media_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" >
+        
+		<ImageView
+	        android:id="@+id/facebook_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/facebook_icon" />
+	
+	    <ImageView
+	        android:id="@+id/twitter_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/twitter_icon" />
+  	    
+	    <ImageView
+	        android:id="@+id/youtube_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/youtube_icon" />
+	    
+    </LinearLayout>
+
+</RelativeLayout>

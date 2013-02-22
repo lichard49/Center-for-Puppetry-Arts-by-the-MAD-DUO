@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/background_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/temp_bg" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  >
+            
+                <Button
+			        android:id="@+id/membership"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_above="@+id/tableLayout1"
+			        android:layout_alignRight="@+id/tableLayout1"
+			        android:layout_marginBottom="20dp"
+			        android:text="Membership" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                <Button
+			        android:id="@+id/museum"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_above="@+id/tableLayout1"
+			        android:layout_alignRight="@+id/tableLayout1"
+			        android:layout_marginBottom="20dp"
+			        android:text="Museum" />
+                
+                <Button
+			        android:id="@+id/film_series"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_above="@+id/tableLayout1"
+			        android:layout_alignRight="@+id/tableLayout1"
+			        android:layout_marginBottom="20dp"
+			        android:text="Film Series" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+                <Button
+			        android:id="@+id/create_puppet"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_above="@+id/tableLayout1"
+			        android:layout_alignRight="@+id/tableLayout1"
+			        android:layout_marginBottom="20dp"
+			        android:text="Create-a-Puppet" />
+                
+                <Button
+			        android:id="@+id/explore_workshop"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_above="@+id/tableLayout1"
+			        android:layout_alignRight="@+id/tableLayout1"
+			        android:layout_marginBottom="20dp"
+			        android:text="Explore Workshops" />
+        </TableRow>
+    </TableLayout>
+    
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true" >
+    
+    	<TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/qr_icon"
+	        android:lines="2"
+	        android:textColor="#000000"
+	        android:layout_marginRight="10dp"
+	        android:text="Need a QR reader during\nyour visit? Tap this icon!" />
+        
+       	<ImageView
+	        android:id="@+id/qr_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/qr_icon" />
+    
+    </LinearLayout>
+    
+    
+    
+    <ImageView
+        android:id="@+id/logo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/social_media_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/temp_logo" />
+
+    <LinearLayout
+        android:id="@+id/social_media_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" >
+        
+		<ImageView
+	        android:id="@+id/facebook_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/facebook_icon" />
+	
+	    <ImageView
+	        android:id="@+id/twitter_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/twitter_icon" />
+  	    
+	    <ImageView
+	        android:id="@+id/youtube_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:src="@drawable/youtube_icon" />
+	    
+    </LinearLayout>
+    
+</RelativeLayout>

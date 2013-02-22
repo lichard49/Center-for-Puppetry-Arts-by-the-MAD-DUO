@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabletop Theatre"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:text="Mon, Jan 21, 2013, 7pm - 9pm\nAges 14+ (Beginner to Intermediate)\nCost - On-Site: General Public: $30*; Members: $20\nCost - Webinar: General Public: $15; Members: $10" />    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bringing Picture Books to Life Through Shadow Puppetry"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:text="Wed, Feb 13, 2013, 7pm - 9pm\nAges 14+ (Beginner)\nCost - On-Site: General Public: $30*; Members: $20\nCost - Webinar: General Public: $15; Members: $10" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="International Puppet Celebration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:text="Sat, Mar 16, 2013, 5pm - 6:30pm\nAges 4+ (Family Audiences)\nCost: General Public: $4; Members: $4" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puppet Slam Primer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:text="Mon, Apr 22, 2013, 7pm - 9pm\nAges 18+ (All levels)\nCost - On-Site: General Public: $30*; Members: $20\nCost - Webinar: General Public: $15; Members: $10" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puppetry of Asia"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:text="Thur, May 9, 2013, 7pm - 9pm\nAges 18+ (Intermediate to Advanced)\nCost - On-Site: General Public: $10; Members: $5\nCost - Webinar: General Public: $5; Members: FREE" />
+    
+</LinearLayout>
